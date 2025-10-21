@@ -1,9 +1,46 @@
+<!-- Header -->
+<app-header/>
+
 <div class="container">
-
-	<!-- Header -->
-	<app-header/>
-
+	
 	<!-- Hero Section -->
 	<app-hero/>
+
+	<span>How it works</span>
+	
+	<h2>Your daily dose of health in 3 simple steps</h2>
+
+	<!-- Steps -->
+	<app-step stepImg="img/app/app-screen-1.png" stepNumber="01" stepImgAlt="app1">
+		<h3>
+			Tell us what you like (and what not)
+		</h3>
+		<p>
+			Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!
+		</p>
+	</app-step>
+
+	
+	<app-step stepImg="img/app/app-screen-2.png" stepNumber="02" stepImgAlt="app1" [reverse]=true>
+		<h3>
+			Approve your weekly meal plan
+		</h3>
+		<p>
+			Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.
+		</p>
+	</app-step>
+
+
+	<app-step stepImg="img/app/app-screen-3.png" stepNumber="03" stepImgAlt="app1">
+		<h3>
+			Receive meals at convenient time
+		</h3>
+		<p>
+			Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!
+		</p>
+	</app-step>
+
+
+
 	
 </div>

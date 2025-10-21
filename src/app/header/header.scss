@@ -4,6 +4,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  background-color: var(--primary);
+  height: 80px;
+  width: 100vw;
+
 
   & .logo {
     padding: 1rem;
@@ -15,9 +19,7 @@ header {
 
   // color: rgb(170, 170, 170);
 
-  background-color: #b7b7b7;
-  height: 100px;
-  width: 100vw;
+
 
   & ul{
     display: flex;

@@ -1,0 +1,17 @@
+<div class="grid grid-2-columns mb-10">
+
+	<div class="image-box" [class.order-1]="!reverse">
+		<img 
+			src="{{stepImg}}"
+			alt="{{stepImgAlt}}"
+			width="200rem">
+	</div>
+
+	<div [class.order-2]="reverse"
+		class="step-description">
+		<div class="number-step">
+			<span>{{stepNumber}}</span>
+		</div>
+		<ng-content></ng-content>
+	</div>
+</div>
