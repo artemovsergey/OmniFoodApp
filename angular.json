@@ -107,10 +107,16 @@
             ]
           }
         }
+        
       }
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": false,
+    "schematicCollections": [
+  
+    ]
+  },
+  "schematics": {  
   }
 }

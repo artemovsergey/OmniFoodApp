@@ -1,50 +1,55 @@
-<!-- Header -->
+ 
+
 <app-header/>
 
+<ion-icon name="airplane-outline"></ion-icon>
+
+<app-hero/>
+
+<app-listlogos/>
+
 <div class="container">
-	
-	<!-- Hero Section -->
-	<app-hero/>
-
-	<!-- List of logos -->
-
-	<app-listlogos/>
-
 	<span>How it works</span>
-	
 	<h2>Your daily dose of health in 3 simple steps</h2>
-
-	<!-- Steps -->
-	<app-step stepImg="img/app/app-screen-1.png" stepNumber="01" stepImgAlt="app1">
-		<h3>
-			Tell us what you like (and what not)
-		</h3>
-		<p>
-			Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!
-		</p>
-	</app-step>
-
-	
-	<app-step stepImg="img/app/app-screen-2.png" stepNumber="02" stepImgAlt="app1" [reverse]=true>
-		<h3>
-			Approve your weekly meal plan
-		</h3>
-		<p>
-			Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.
-		</p>
-	</app-step>
-
-
-	<app-step stepImg="img/app/app-screen-3.png" stepNumber="03" stepImgAlt="app1">
-		<h3>
-			Receive meals at convenient time
-		</h3>
-		<p>
-			Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!
-		</p>
-	</app-step>
-
-
-
-	
 </div>
+
+
+<app-step stepImg="img/app/app-screen-1.png" stepNumber="01" stepImgAlt="app1">
+	<h3>
+		Tell us what you like (and what not)
+	</h3>
+	<p>
+		Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!
+	</p>
+</app-step>
+
+<app-step stepImg="img/app/app-screen-2.png" stepNumber="02" stepImgAlt="app1" [reverse]=true>
+	<h3>
+		Approve your weekly meal plan
+	</h3>
+	<p>
+		Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.
+	</p>
+</app-step>
+
+<app-step stepImg="img/app/app-screen-3.png" stepNumber="03" stepImgAlt="app1">
+	<h3>
+		Receive meals at convenient time
+	</h3>
+	<p>
+		Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!
+	</p>
+</app-step>
+
+<div class="container">
+	<span>Meals</span>
+	<h2>Omnifood AI chooses from 5,000+ recipes</h2>
+</div>
+
+<div class="container grid grid--3-cols">
+	<app-mealscard mealImage="img/meals/meal-1.jpg" mealTitle="Japanese Gyozas" mealCategory="Asian" [mealDetails]="['650 calories', 'Nutriscore &reg; 74', '4.9 rating']"/>
+	<app-mealscard mealImage="img/meals/meal-2.jpg" mealTitle="Spaghetti Carbonara" mealCategory="Italian" [mealDetails]="['800 calories', 'Nutriscore &reg; 68', '4.8 rating']"/>
+	<app-mealscard mealImage="img/meals/meal-2.jpg" mealTitle="Chicken Tikka Masala" mealCategory="Indian" [mealDetails]="['700 calories', 'Nutriscore &reg; 72', '4.7 rating']"/>
+</div>
+
+

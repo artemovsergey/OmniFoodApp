@@ -1,12 +1,14 @@
+:host{
+  background-color: var(--primary);
+}
 .section-hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items:center;
   gap: 0.8rem;
   margin-bottom: 5rem;
-}
 
-.hero {
+  & .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +16,11 @@
   height: 100vh;
   gap: 2rem;
   line-height: 1.2;
+  }
+
 }
+
+
 
 .action {
   display: flex;

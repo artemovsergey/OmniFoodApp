@@ -1,0 +1,54 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 100%;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    margin: 3rem;
+    justify-self: center;
+    align-self: center;
+    transition: all 0.4s;
+    overflow: hidden;
+    border-radius: 2rem;
+
+    &:hover{
+        box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+        transform: translateY(-1.5rem);
+    }
+
+    & img{
+        width: 100%;
+    }
+
+    span{
+        font-size: 1.2rem;
+        font-weight: 500;
+        border: 1px solid green;
+        background-color: green;
+        color:var(--primary);
+        border-radius: 100px;
+        padding: 0.5rem 0.8rem;
+        text-transform: uppercase;
+    }
+
+    p{
+        font-size: 2.8rem;
+        font-weight: 500;
+    }
+
+    ul{
+        list-style: none;
+        & li{
+             font-size: 2.0rem;
+             padding: 2rem;
+        }
+    }
+
+    ion-icon{
+        font-size: 2rem;
+        color: var(--accent);
+        cursor: pointer;
+    }
+}
