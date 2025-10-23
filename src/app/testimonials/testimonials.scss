@@ -1,0 +1,81 @@
+:host {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--primary);
+}
+
+.reviews {
+    padding: 2rem;
+
+
+  h3 {
+    font-weight: 800;
+    font-size: 30px;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  span {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 2rem 0;
+    text-align: center;
+    display: block;
+  }
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.testimonial {
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  blockquote {
+    // font-style: italic;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+   
+  }
+
+  p {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #777;
+  }
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+
+    figure{
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    
+    img {
+        width:20rem;
+        height:20rem;
+        &:hover{
+            transform: scale(1.1);
+            transition: all 0.5s;
+        }
+    }
+}

@@ -6,10 +6,12 @@ import { Listlogos } from "./listlogos/listlogos";
 import { Mealscard } from "./mealscard/mealscard";
 
 import { IonIcon } from "@ionic/angular/standalone";
+import { Testimonials } from './testimonials/testimonials';
 
 @Component({
   selector: 'app-root',
-  imports: [IonIcon, Header, Hero, Step, Listlogos, Mealscard],
+  standalone: true,
+  imports: [IonIcon, Header, Hero, Step, Listlogos, Mealscard, Testimonials],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
