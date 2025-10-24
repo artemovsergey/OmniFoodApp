@@ -51,5 +51,32 @@
 	<app-mealscard mealImage="img/meals/meal-2.jpg" mealTitle="Chicken Tikka Masala" mealCategory="Indian" [mealDetails]="['700 calories', 'Nutriscore &reg; 72', '4.7 rating']"/>
 </div>
 
+<div class="all-recipes">
+	<a href="#">See all recipes &RightArrow;</a>
+</div>
+
 <app-testimonials/>
+
+<div class="container grid grid--2-cols mb-3">
+	<app-price-card title="Starter"
+				currency="$"
+				price="19"
+				details="per month. That's just $6.33 per meal!"
+				[features]='["1 meal per day","Order 24/7","Free delivery"]'
+				[sale]="false"/>
+
+	<app-price-card title="Complete"
+					currency="$"
+					price="649"
+					details="per month. That's just $11 per meal!"
+					[features]='["2 meals per day","Order 24/7","Delivery is free"]'
+					[sale]="true"/>
+</div>
+
+<p class="note mb-3">
+	Prices include all applicable taxes. You can cancel at any time. Both plans include the following
+</p>
+
+
+<hr/>
 

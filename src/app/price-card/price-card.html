@@ -1,0 +1,17 @@
+<section [ngClass]="sale === true ? 'price-card-sale' : 'price-card'" >
+
+    <span> {{title}}</span>
+    <h3> {{currency}} {{price}} </h3>
+    <p>{{details}}</p>
+
+    <ul>
+        @for (f of features; track $index) {
+           <li><ion-icon name="checkmark"/>{{f}}</li>
+        }
+
+        <!-- <li><ion-icon name="close"/></li> -->
+    </ul>
+
+    <a>Start eating well</a>
+
+</section>
