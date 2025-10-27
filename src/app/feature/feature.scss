@@ -1,0 +1,29 @@
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+
+    & .img-wrapper{
+        display: inline;
+        font-size: 4rem;
+        padding:2rem;
+        border-radius: 50%;
+        background: var(--primary);
+        color: var(--accent);
+    }
+
+    & h3{
+        font-size: 3rem;
+        font-weight: 1rem;
+    }
+
+    & p{
+        font-size: 2rem;
+        text-align: left;
+        color: var(--base);
+        // line-height: 1rem;
+    }
+}
